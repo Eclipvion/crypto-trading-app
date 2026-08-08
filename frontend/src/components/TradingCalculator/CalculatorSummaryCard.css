@@ -1,0 +1,136 @@
+/* ==========================================================================
+   CALCULATOR SUMMARY CARD STYLES - ANALYTICS MATCHING SEAMLESS DESIGN
+   ========================================================================== */
+
+.summary-card-paper {
+  background: rgba(18, 22, 33, 0.65) !important;
+  backdrop-filter: blur(16px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.04) !important;
+  border-radius: 12px !important;
+  padding: 18px !important;
+  box-shadow: none !important;
+}
+
+.summary-card-paper:hover {
+  background: rgba(18, 22, 33, 0.8) !important;
+  border-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+/* Header & Copy Button */
+.summary-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.summary-card-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-size: 0.85rem !important;
+  font-weight: 700 !important;
+  color: #e2e8f0 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+/* Projected PnL & ROI Hero Highlight Banner */
+.summary-pnl-hero {
+  padding: 14px 18px !important;
+  margin-bottom: 16px !important;
+  border-radius: 10px !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.summary-pnl-hero.profit {
+  background: rgba(0, 230, 118, 0.08) !important;
+  border: 1px solid rgba(0, 230, 118, 0.2) !important;
+}
+
+.summary-pnl-hero.loss {
+  background: rgba(255, 61, 0, 0.08) !important;
+  border: 1px solid rgba(255, 61, 0, 0.2) !important;
+}
+
+.summary-pnl-value {
+  font-family: 'JetBrains Mono', 'Space Grotesk', monospace !important;
+  font-size: 1.4rem !important;
+  font-weight: 800 !important;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 2px;
+}
+
+.summary-pnl-value.positive {
+  color: #00e676 !important;
+}
+
+.summary-pnl-value.negative {
+  color: #ff3d00 !important;
+}
+
+.summary-roi-value {
+  font-family: 'JetBrains Mono', 'Space Grotesk', monospace !important;
+  font-size: 1.1rem !important;
+  font-weight: 800 !important;
+  margin-top: 2px;
+}
+
+/* Metric Items & Grid */
+.summary-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 12px;
+}
+
+.summary-metric-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 10px;
+  background: rgba(8, 10, 15, 0.3);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.summary-metric-label {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.68rem;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+.summary-metric-value {
+  font-family: 'JetBrains Mono', 'Space Grotesk', monospace;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #f8fafc;
+}
+
+/* Liquidation Alert Box */
+.summary-liq-box {
+  padding: 12px 14px;
+  border-radius: 8px;
+  background: rgba(8, 10, 15, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.summary-fee-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.78rem;
+  margin-top: 3px;
+  font-family: 'JetBrains Mono', 'Inter', monospace;
+}

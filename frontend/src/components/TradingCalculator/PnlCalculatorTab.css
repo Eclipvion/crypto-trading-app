@@ -1,0 +1,49 @@
+/* ==========================================================================
+   PNL CALCULATOR TAB STYLES - ANALYTICS MATCHING SEAMLESS DESIGN
+   ========================================================================== */
+
+.pnl-tab-container {
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 1024px) {
+  .pnl-tab-container {
+    flex-direction: column;
+  }
+}
+
+.pnl-input-card {
+  padding: 20px !important;
+  background: rgba(18, 22, 33, 0.65) !important;
+  backdrop-filter: blur(16px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.04) !important;
+  border-radius: 12px !important;
+  box-shadow: none !important;
+}
+
+/* Discount Banner */
+.pnl-discount-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 14px;
+  background: rgba(8, 10, 15, 0.4);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+/* Preset Action Chips */
+.pnl-preset-chip {
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 0.7rem !important;
+  border-radius: 6px !important;
+  transition: all 0.2s ease !important;
+}
+
+.pnl-preset-chip.active {
+  background: rgba(0, 229, 255, 0.12) !important;
+  color: #00e5ff !important;
+  border: 1px solid rgba(0, 229, 255, 0.25) !important;
+}

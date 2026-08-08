@@ -1,0 +1,30 @@
+/* ==========================================================================
+   RISK POSITION SIZE TAB STYLES - ANALYTICS MATCHING SEAMLESS DESIGN
+   ========================================================================== */
+
+.risk-tab-container {
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 1024px) {
+  .risk-tab-container {
+    flex-direction: column;
+  }
+}
+
+.risk-input-card {
+  padding: 20px !important;
+  background: rgba(18, 22, 33, 0.65) !important;
+  backdrop-filter: blur(16px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.04) !important;
+  border-radius: 12px !important;
+  box-shadow: none !important;
+}
+
+.risk-alert-box {
+  background: rgba(255, 152, 0, 0.08) !important;
+  color: #ff9800 !important;
+  border: 1px solid rgba(255, 152, 0, 0.2) !important;
+  border-radius: 8px !important;
+}

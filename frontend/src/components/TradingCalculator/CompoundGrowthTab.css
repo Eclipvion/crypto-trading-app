@@ -1,0 +1,33 @@
+/* ==========================================================================
+   COMPOUND GROWTH TAB STYLES - ANALYTICS MATCHING SEAMLESS DESIGN
+   ========================================================================== */
+
+.compound-tab-container {
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 1024px) {
+  .compound-tab-container {
+    flex-direction: column;
+  }
+}
+
+.compound-roadmap-table {
+  width: 100%;
+}
+
+.compound-roadmap-table th {
+  font-family: 'Space Grotesk', sans-serif;
+  color: var(--text-secondary, #94a3b8);
+  font-weight: 700;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.compound-roadmap-table td {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  font-family: 'JetBrains Mono', 'Space Grotesk', monospace;
+  font-size: 0.82rem;
+}

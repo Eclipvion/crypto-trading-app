@@ -1,0 +1,38 @@
+/* ==========================================================================
+   DCA CALCULATOR TAB STYLES - ANALYTICS MATCHING SEAMLESS DESIGN
+   ========================================================================== */
+
+.dca-tab-container {
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 1024px) {
+  .dca-tab-container {
+    flex-direction: column;
+  }
+}
+
+.dca-order-row {
+  padding: 12px 14px;
+  border-radius: 8px;
+  background: rgba(8, 10, 15, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  transition: all 0.2s ease;
+}
+
+.dca-order-row:hover {
+  border-color: rgba(255, 255, 255, 0.08);
+  background: rgba(8, 10, 15, 0.6);
+}
+
+.dca-benefit-banner {
+  padding: 12px 14px;
+  border-radius: 8px;
+  background: rgba(0, 230, 118, 0.08);
+  border: 1px solid rgba(0, 230, 118, 0.2);
+}

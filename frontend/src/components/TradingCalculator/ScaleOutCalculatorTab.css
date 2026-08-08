@@ -1,0 +1,22 @@
+/* ==========================================================================
+   SCALING EXIT TAB STYLES - ANALYTICS MATCHING SEAMLESS DESIGN
+   ========================================================================== */
+
+.scale-out-tab-container {
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 1024px) {
+  .scale-out-tab-container {
+    flex-direction: column;
+  }
+}
+
+.preset-chip-action {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.preset-chip-action:hover {
+  transform: translateY(-1px);
+}

@@ -1,0 +1,124 @@
+.watchlist-panel-container {
+  width: 100%;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.panel-title {
+  color: var(--text-secondary);
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 0.65rem !important;
+  letter-spacing: 0.8px !important;
+  text-transform: uppercase;
+  padding: 0 12px;
+}
+
+.watchlist-items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+  max-height: 220px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 4px;
+}
+
+/* Custom Sleek Scrollbar */
+.watchlist-items-list::-webkit-scrollbar {
+  width: 4px;
+}
+
+.watchlist-items-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.watchlist-items-list::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 99px;
+  transition: all 0.2s ease;
+}
+
+.watchlist-items-list::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 229, 255, 0.35);
+}
+
+.watchlist-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 14px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.015);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.watchlist-item:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.08);
+  transform: translateY(-1px);
+}
+
+.watchlist-item.selected {
+  background: rgba(0, 229, 255, 0.06);
+  border-color: rgba(0, 229, 255, 0.15);
+}
+
+.item-left {
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+}
+
+.item-name {
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 0.85rem !important;
+  color: var(--text-primary);
+}
+
+.item-pair {
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-size: 0.65rem !important;
+  color: var(--text-secondary);
+}
+
+.item-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+}
+
+.item-price {
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 0.8rem !important;
+  color: var(--text-primary);
+}
+
+.item-change {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  font-size: 0.65rem !important;
+  font-weight: 700 !important;
+  font-family: 'Space Grotesk', sans-serif !important;
+}
+
+.item-change.positive {
+  color: var(--neon-green);
+}
+
+.item-change.negative {
+  color: var(--neon-red);
+}
+
+.change-icon {
+  font-size: 0.75rem !important;
+}

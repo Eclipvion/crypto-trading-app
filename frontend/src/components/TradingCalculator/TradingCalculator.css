@@ -1,0 +1,258 @@
+/* ==========================================================================
+   ECLIPVION TRADING CALCULATOR - TERMINAL FULL-WIDTH SEAMLESS STYLING
+   ========================================================================== */
+
+/* Main Container - Full Width Terminal View */
+.calculator-container {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 20px 24px;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  box-sizing: border-box;
+}
+
+.calculator-paper {
+  padding: 0 !important;
+  height: 100%;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Compact Header Title */
+.calculator-title {
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-size: 1.05rem !important;
+  font-weight: 700 !important;
+  color: #f8fafc;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #00f0ff 0%, #7000ff 50%, #00e676 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Live Coin Price Capsule Header */
+.coin-info-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 6px 14px;
+  background: rgba(18, 22, 33, 0.65);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(16px);
+  transition: all 0.2s ease;
+}
+
+.coin-info-container:hover {
+  background: rgba(18, 22, 33, 0.85);
+}
+
+.selected-coin-info {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #00f0ff !important;
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 0.85rem !important;
+}
+
+.current-price-info {
+  color: #00e676 !important;
+  font-size: 0.95rem !important;
+  font-weight: 700 !important;
+  font-family: 'JetBrains Mono', 'Space Grotesk', monospace !important;
+}
+
+/* Seamless Tab Navigation Header - Matching Analytics Page */
+.calculator-tabs-wrapper {
+  background: rgba(18, 22, 33, 0.65);
+  backdrop-filter: blur(16px);
+  border-radius: 10px;
+  padding: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  margin-bottom: 20px;
+}
+
+/* Tab Panel Content Wrapper */
+.calculator-content {
+  width: 100%;
+}
+
+/* Seamless Glass Cards — removed Paper, keep for any remaining uses */
+.input-group,
+.details-paper {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+/* Section Title — neon underline style */
+.input-group-title,
+.details-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(57, 255, 20, 0.1);
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-size: 0.8rem !important;
+  font-weight: 800 !important;
+  color: #39ff14 !important;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+/* Direction Toggle Buttons (Long / Short) */
+.long-button {
+  border-radius: 8px 0 0 8px !important;
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 0.8rem !important;
+  padding: 8px 12px !important;
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+  background: rgba(8, 10, 15, 0.4) !important;
+}
+
+.long-button.Mui-selected {
+  background: rgba(0, 230, 118, 0.15) !important;
+  color: #00e676 !important;
+  border: 1px solid rgba(0, 230, 118, 0.3) !important;
+}
+
+.short-button {
+  border-radius: 0 8px 8px 0 !important;
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 0.8rem !important;
+  padding: 8px 12px !important;
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+  background: rgba(8, 10, 15, 0.4) !important;
+}
+
+.short-button.Mui-selected {
+  background: rgba(255, 61, 0, 0.15) !important;
+  color: #ff3d00 !important;
+  border: 1px solid rgba(255, 61, 0, 0.3) !important;
+}
+
+/* Inputs - Seamless Glass Styling */
+.MuiOutlinedInput-root {
+  background: rgba(8, 10, 15, 0.4) !important;
+  border-radius: 8px !important;
+  font-size: 0.85rem !important;
+  font-family: 'JetBrains Mono', 'Inter', monospace !important;
+}
+
+.MuiOutlinedInput-input {
+  padding: 8px 12px !important;
+  font-size: 0.85rem !important;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #00e5ff !important;
+  border-width: 1px !important;
+}
+
+.MuiInputLabel-root {
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 0.78rem !important;
+  color: #94a3b8 !important;
+}
+
+.MuiInputLabel-root.Mui-focused {
+  color: #00e5ff !important;
+}
+
+/* Preset Chips Styling */
+.preset-chip-action {
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 0.7rem !important;
+  height: 24px !important;
+  border-radius: 6px !important;
+}
+
+/* Slider styling */
+.MuiSlider-root {
+  height: 4px !important;
+  margin-top: 4px;
+  padding: 8px 0 !important;
+}
+
+.MuiSlider-rail {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+  opacity: 1 !important;
+}
+
+.MuiSlider-track {
+  background: #00e5ff !important;
+  border: none !important;
+}
+
+.MuiSlider-thumb {
+  background-color: #ffffff !important;
+  border: 2px solid #00e5ff !important;
+  width: 14px !important;
+  height: 14px !important;
+  box-shadow: none !important;
+}
+
+/* Spin animation for refresh icon */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.spin-icon {
+  animation: spin 0.8s linear infinite;
+}
+
+/* Hide number input spinners/arrows */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+@media (max-width: 960px) {
+  .calculator-container {
+    padding: 14px 16px;
+  }
+  .calculator-title {
+    font-size: 0.95rem !important;
+  }
+  .input-group,
+  .details-paper {
+    padding: 14px !important;
+  }
+}
